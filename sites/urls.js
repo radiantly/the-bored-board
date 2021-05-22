@@ -15,7 +15,7 @@ exports.URLS = [
   "https://play2048.co/",
   "https://en.wikipedia.org/wiki/List_of_individual_dogs",
   "https://zoomquilt.org/",
-  "http://www.drivemeinsane.com/",
+  "https://mlh.io/",
   "https://freerice.com/categories/english-vocabulary",
   "https://apod.nasa.gov/apod/astropix.html",
   "https://www.duolingo.com/",
