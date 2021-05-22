@@ -3,10 +3,10 @@
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   overflow: hidden;
   background: linear-gradient(#c94b4b, #4b134f);
-  gap: 5px;
+  gap: 4px;
   padding: 4px;
 }
 
@@ -15,11 +15,11 @@
   height: 100%;
   overflow: hidden;
   border-radius: 5px;
-  border: 3px solid white;
+  border: 2px solid white;
 }
 
 .tile:hover {
-  border: 3px solid #ff0745;
+  border: 2px solid #ff0745;
 }
 
 .tile:hover img {
