@@ -4,7 +4,9 @@ const Tile = (props) => {
   return (
     <div className={styles.tile}>
       <a href={props.url} target="_blank">
-        <img src={`screenshots/${btoa(props.url)}.png`} />
+        <img
+          src={`screenshots/${Buffer.from(props.url).toString("base64")}.png`}
+        />
       </a>
     </div>
   );
