@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  --gap-betw: 4px;
 }
 
 .overlay {
@@ -20,4 +21,37 @@
     rgba(0, 0, 0, 0.7)
   );
   pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #111;
+  font-size: 5rem;
+  /* text-shadow: 0 0 20px white; */
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  width: fit-content;
+  transition: opacity 0.5s ease;
+}
+
+.linkInfo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: var(--gap-betw);
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+  .container {
+    --gap-betw: 2px;
+  }
+  .linkInfo {
+    display: none;
+  }
 }

@@ -1,4 +1,6 @@
-exports.URLS = [
+import { shuffleArray } from "./utils";
+
+export const URLS = shuffleArray([
   "https://findtheinvisiblecow.com/",
   "https://www.mapcrunch.com/",
   "https://theuselessweb.com/",
@@ -181,4 +183,4 @@ exports.URLS = [
   "https://playoverwatch.com/",
   "https://pokemongolive.com/",
   "https://www.half-life.com/",
-];
+]);

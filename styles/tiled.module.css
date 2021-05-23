@@ -6,8 +6,8 @@
   grid-template-rows: repeat(13, 1fr);
   overflow: hidden;
   background: linear-gradient(#c94b4b, #4b134f);
-  gap: 4px;
-  padding: 4px;
+  gap: var(--gap-betw);
+  padding: var(--gap-betw);
 }
 
 .tile {
@@ -19,7 +19,7 @@
 }
 
 .tile:hover {
-  border: 2px solid #ff0745;
+  border-color: #ff0745;
 }
 
 .tile:hover img {
@@ -33,4 +33,14 @@
   object-fit: cover;
   filter: brightness(95%);
   transition: transform 1.5s cubic-bezier(1, 0.03, 0.74, 0.61);
+}
+
+@media (orientation: portrait) {
+  .tiled {
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+  }
+  .tile {
+    border: 1px solid white;
+  }
 }

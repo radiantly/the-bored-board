@@ -1,13 +1,14 @@
-const puppeteer = require("puppeteer");
+import { launch } from "puppeteer";
+import fs from "fs";
 const {
   promises: { access },
   constants: { F_OK },
-} = require("fs");
+} = fs;
 
-const { URLS } = require("./urls");
+import { URLS } from "./urls";
 
 (async () => {
-  const browser = await puppeteer.launch();
+  const browser = await launch();
   const page = await browser.newPage();
   await page.setViewport({ width: 1280, height: 720 });
   for (const [i, url] of URLS.entries()) {

@@ -5,12 +5,17 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="The Bored Board" />
+        <title>The Bored Board</title>
+        <meta
+          name="description"
+          content="The place you come to when you're feeling bored"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TiledBg />
-      <div className={styles.overlay}></div>
+      <div className={styles.overlay}>
+        <div className={styles.title}>The Bored Board</div>
+      </div>
     </div>
   );
 }
