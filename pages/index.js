@@ -15,6 +15,9 @@ export default function Home() {
       <TiledBg />
       <div className={styles.overlay}>
         <div className={styles.title}>The Bored Board</div>
+        <div className={styles.subtitle}>
+          A wall of interesting sites to visit when you're bored.
+        </div>
       </div>
     </div>
   );

@@ -24,24 +24,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .title {
   color: #111;
   font-size: 5rem;
-  /* text-shadow: 0 0 20px white; */
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   width: fit-content;
-  transition: opacity 0.5s ease;
 }
 
-.linkInfo {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.subtitle {
+  color: #111;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: var(--gap-betw);
+  text-align: center;
+  width: fit-content;
+  padding: 5px 10px;
 }
 
 @media (max-width: 600px) {
